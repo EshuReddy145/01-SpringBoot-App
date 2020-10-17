@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Application {
+  private Map<String,Object> cache = new HashMap<String,object>()
 
         private static final String REST_URL="https://www.equifax.com/getScores";
 
@@ -14,4 +15,7 @@ public class Application {
 
 	}
 
+      public void loadDataToCache(){
+         //logic    
+}
 }
